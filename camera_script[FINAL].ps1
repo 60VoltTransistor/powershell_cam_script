@@ -52,6 +52,7 @@ if($mp4){
         }
     }
 
+    $Length += 'Total Items: ' + $DeleteList.Length
     $Length | Out-File -FilePath $logFileLocation\"log_$logDate.txt" -append
     if($debug){
         Write-Output $day_30DaysInPast
